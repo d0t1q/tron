@@ -30,12 +30,13 @@ if /i not "%SAFE_MODE%"=="yes" (
 		echo.
 		echo  ERROR
 		echo.
-		echo  Tron doesn't think it is running as an Administrator.
-		echo  Tron MUST be run with full Administrator rights to
-		echo  function correctly.
+		echo  Look you fucking moron, Tron needs to be run as Admin
+		echo  Re-Run Tron as Administrator so you won't see this 
+		echo  obvious warning. 
 		echo.
 		echo  Close this window and re-run Tron as an Administrator.
 		echo  ^(right-click tron.bat and click "Run as Administrator"^)
+		echo  ^(obviously, do you even know what windows is?^)
 		echo.
 		pause
 		exit 1
@@ -51,13 +52,15 @@ if "%WIN_VER:~0,19%"=="Windows Server 2016" (
 		echo.
 		echo  ^! ERROR
 		echo.
-		echo    Tron does not support "%WIN_VER%" ^(yet^).
+		echo    Did you even RTFM you Clown?  "%WIN_VER%"
+		echo	isn't supported ^(yet^)
 		echo.
-		echo    If you want to override and run anyway, re-run
-		echo    Tron from the command-line with the -dev flag.
+		echo    Look I realize you might want to override this
+		echo    and run it anyways, so fuck you ignore me
+		echo	add -dev to the command flag
 		echo.
-		echo    Keep in mind that by doing this you're waiving
-		echo    your already non-existent warranty!
+		echo    I still won't fucking support you anyways so fuck
+		echo    me right? Not like it matters.
 		echo.
 		pause
 		exit 3
@@ -67,6 +70,7 @@ if "%WIN_VER:~0,19%"=="Windows Server 2016" (
 
 
 :: CHECK: Prohibited directory execution
+:: YALL FUCKING DUMB STOP RUNNING IT IN THE WRONG DIRECTORY!
 :: Why? because people have some bizarre obsession with running from the System temp folder
 :: or some other random location instead of from the desktop as instructed
 set RUNDIR=%~dp0
@@ -80,20 +84,27 @@ if %BAD_RUNPATH%==yes (
 	cls
 	echo.
 	echo  ERROR
+	echo  YO YOU DIDNT FUCKING READ THE MANUAL MORON, WE'VE BEEN OVER THIS
+	echo  DON'T FUCKING RUN TRON FROM ANYWHERE BUT THE DESKTOP FFS.
 	echo.
+	echo  READ THE FUCKING MANUAL!
+	echo. 
 	echo  Tron is running from a temp location or the root of %SystemDrive%.
-	echo  Tron cannot run from these locations as they're some of the
-	echo  first places to get cleaned when the script starts. Run Tron
-	echo  directly from the Desktop. Example of a correct path:
+	echo  Obviously Tron can't run from these sections because it would
+	echo  fucking delete itself you clown. 
+	echo  Run Tron directly from the Desktop. Example of a correct path:
 	echo.
 	echo   "%USERPROFILE%\Desktop\tron\tron.bat"
 	echo.
-	echo  Go avail yourself of the instructions which are named,
-	echo  appropriately enough...
+	echo  Look you're reading this alert now that means you fucked up and 
+	echo  didn't read the actual instructions so gtfo out of here and go
+	echo  read that shit. Sick and tired of answering these easy questions
+	echo  because you fucks can't RTFM properly 
 	echo.
+	echo  go read the file appropriately named 
 	echo  "INSTRUCTIONS -- YES ACTUALLY READ THEM.txt"
 	echo.
-	echo  Goodbye.
+	echo  Goodbye(clown).
 	echo.
 	pause
 	exit 5
